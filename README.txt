@@ -1,0 +1,1 @@
+This application helps to navigate between current location and destination.
