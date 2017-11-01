@@ -110,9 +110,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             return;
         }
         loading = ProgressDialog.show(this, "Loading....Getting GPS","", false);
-        if(locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER))
+        if(locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER))
         {
-            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, new android.location.LocationListener() {
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, new android.location.LocationListener() {
 
 
                 @Override
